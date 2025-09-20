@@ -1,0 +1,118 @@
+# Hugo configuration file
+title: TagCache
+baseURL: "https://tagcache.io"
+languageCode: "en-us"
+
+# Force production environment settings
+environment: "production"
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+    style: github
+    lineNos: true
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: API Reference
+      pageRef: /docs/api
+      weight: 2
+    - name: Examples
+      pageRef: /docs/examples
+      weight: 3
+    - name: Performance
+      pageRef: /docs/performance
+      weight: 4
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/aminshamim/tagcache"
+      params:
+        icon: github
+    - name: Search
+      weight: 6
+      params:
+        type: search
+
+params:
+  # SEO and Meta Configuration
+  author: "Amin Shamim"
+  copyright: "TagCache"
+  favicon: "/favicon.ico"
+
+  # Advanced SEO
+  canonicalURL: "https://tagcache.io"
+  alternatePageName: "TagCache Documentation"
+
+  # Force search engine indexing
+  noindex: false
+  robots: "index, follow"
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: /images/logo.png
+      dark: /images/logo.png
+      width: 48
+      height: 48
+
+  assets:
+    css:
+      - css/custom.css
+
+  page:
+    width: normal
+
+  layout:
+    sidebar: false
+    toc: false
+
+  theme:
+    default: system
+    displayToggle: true
+
+  home:
+    sidebar: false
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: false
+
+  editPage:
+    enable: true
+    base: "https://github.com/aminshamim/tagcache/edit/main/docs/content"
+
+  blog:
+    list:
+      displayTags: true
+
+  highlight:
+    copy:
+      enable: true
+    wrap: true
+
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      index: content
+
+  editURL:
+    enable: true
+    base: "https://github.com/aminshamim/tagcache/edit/main/docs/content"
+

@@ -1,0 +1,54 @@
+{
+  "name": "TagCache - High-Performance Tagged Caching System",
+  "short_name": "TagCache",
+  "description": "Ultra-fast tag-driven cache invalidation with dual protocol support",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#19703d",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["developer", "tools", "productivity"],
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Documentation",
+      "short_name": "Docs",
+      "description": "View TagCache documentation",
+      "url": "/docs/",
+      "icons": [
+        {
+          "src": "/images/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Getting Started",
+      "short_name": "Start",
+      "description": "Quick start guide",
+      "url": "/docs/getting-started/",
+      "icons": [
+        {
+          "src": "/images/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
