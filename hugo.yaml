@@ -1,6 +1,6 @@
 # Hugo configuration file
 title: TagCache
-baseURL: "https://tagcache.io"
+baseURL: "https://tagcache.io/"
 languageCode: "en-us"
 
 # Force production environment settings
@@ -54,7 +54,7 @@ params:
   favicon: "/favicon.ico"
 
   # Advanced SEO
-  canonicalURL: "https://tagcache.io"
+  canonicalURL: "https://tagcache.io/"
   alternatePageName: "TagCache Documentation"
 
   # Force search engine indexing
